@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Home Page</title>
+        <%- include('partials/assets/commonAssetsHead'); %>
+    </head>
+    <body>
+        <%- include('partials/headers/headerPartial') %>
+        <div class="container">
+            <h1 class="mt-5">Wanna Watch Me Code</h1>
+            <div>
+                <p>Welcome to wanna watch me code, where you can watch me code live!</p>
+            </div>
+
+            <div class="social-media-homepage">
+                <%- include('partials/socialBlurb', {social: {title: 'Watch live on Twitch', blurb: 'Streaming weekend afternoons usually on saturday.', media: {link: 'https://www.twitch.tv/wannawatchmecode', imgSrc: '/img/twitch.png'}}}) %>
+                <%- include('partials/socialBlurb', {social: {title: 'Checkout the source code on Github', blurb: 'All source code from the live stream is open source and available to view, or use on Github', media: {link: 'https://github.com/wannawatchmecode', imgSrc: '/img/github_PNG40.png'}}}) %>
+                <%- include('partials/socialBlurb', {social: {title: 'Watch previous episodes on Youtube', blurb: 'Miss an episode? No worries, all live streams are published to youtube.', media: {link: 'https://www.youtube.com/@WannaWatchMeCode', imgSrc: '/img/YouTube-LOGO.png'}}}) %>
+            </div>
+        </div>
+    </body>
+</html>
