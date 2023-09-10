@@ -14,6 +14,10 @@
                 <p>Welcome to wanna watch me code, where you can watch me code live!</p>
             </div>
 
+            <div>
+                <%- include('partials/twitch/stream') %>
+            </div>
+
             <div class="social-media-homepage">
                 <%- include('partials/socialBlurb', {social: {title: 'Watch live on Twitch', blurb: 'Streaming weekend afternoons usually on saturday.', media: {link: 'https://www.twitch.tv/wannawatchmecode', imgSrc: '/img/twitch.png'}}}) %>
                 <%- include('partials/socialBlurb', {social: {title: 'Checkout the source code on Github', blurb: 'All source code from the live stream is open source and available to view, or use on Github', media: {link: 'https://github.com/wannawatchmecode', imgSrc: '/img/github_PNG40.png'}}}) %>
